@@ -31,11 +31,13 @@ results, please refer to the [report](Report.pdf).
 
 ## Repository Structure
 
-
-├── dataset.xls          # Input dataset (monthly total-return indices)
-├── final_version.py     # Full Python implementation
-├── Report.pdf           # Full investment advisory report
-└── README.md
+```text
+.
+├── dataset.xls           # Input dataset (monthly total-return indices)
+├── final_version.py      # Full Python implementation
+├── Report.pdf            # Full investment advisory report
+└── README.md             # This file
+```
 ---
 
 ## Requirements
