@@ -38,4 +38,35 @@ results, please refer to the [report](Report.pdf).
 └── README.md
 ---
 
-## Repository Structure
+## Requirements
+
+The code is written in Python 3 and requires the following libraries:
+
+numpy
+scipy
+pandas
+matplotlib
+
+
+---
+
+## Dataset
+
+The dataset consists of monthly total-return observations for eleven base asset
+class indices (fixed income, global equity, and real assets) and up to nineteen
+additional instruments available to informed clients (sectoral equity indices and
+a commodity aggregate). Index sources are documented in the report.
+
+---
+
+## Methodology Summary
+
+| Component | Method |
+|---|---|
+| Client Profiling | Questionnaire-based scoring, binary informed/non-informed split |
+| SAA Optimisation | Constrained minimum-variance with Michaud resampling (S=100, R=7 restarts) |
+| TAA Optimisation | Black-Litterman posterior with semi-annual GMR views |
+| Rebalancing | Semi-annual, L1 drift tolerance = 0.01 |
+| Transaction Costs | Variable 10 bps + fixed GBP 10 per asset |
+
+For the full mathematical formulation please refer to the report.
